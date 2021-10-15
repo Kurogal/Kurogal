@@ -1,4 +1,6 @@
-### Hi there 👋
+![Lovely Evening](https://i.imgur.com/MOpOh1H.gif)
+
+<!-- ### Hi there 👋 -->
 
 <!--
 **Kurogal/Kurogal** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
