@@ -1,0 +1,1220 @@
+@-moz-document domain("wikidot.com") {
+/*
+                        _______
+                       /       \
+                      .==.    .==.
+                     ((  ))==((  ))
+                    / "=="    "=="\
+                   /____|| || ||___\
+       ________     ____    ________  ___    ___
+       |  ___  \   /    \   |  ___  \ |  |  /  /
+       |  |  \  \ /  /\  \  |  |  \  \|  |_/  /
+       |  |   )  /  /__\  \ |  |__/  /|  ___  \
+       |  |__/  /  ______  \|  ____  \|  |  \  \
+_______|_______/__/ ____ \__\__|___\__\__|___\__\____
+|  ___  \ |  ____/ /    \   |  ___  \ |  ____|  ___  \
+|  |  \  \|  |___ /  /\  \  |  |  \  \|  |___|  |  \  \
+|  |__/  /|  ____/  /__\  \ |  |   )  |  ____|  |__/  /
+|  ____  \|  |__/  ______  \|  |__/  /|  |___|  ____  \
+|__|   \__\____/__/      \__\_______/ |______|__|   \__\
+                https://darkreader.org
+*/
+
+/*! Dark reader generated CSS | Licensed under MIT https://github.com/darkreader/darkreader/blob/master/LICENSE */
+
+/* ==UserStyle==
+@name Dark Reader: Wikidot
+@namespace https://github.com/Kurogal/Kurogal/tree/main/Dark-Reader-Generated-Themes
+@version 1.0.0
+@description Exported Dark Reader Theme with edits. To avoid issue https://github.com/darkreader/darkreader/issues/6350 with certain sites
+@update https://github.com/Kurogal/Kurogal/tree/main/Dark-Reader-Generated-Themes/Dark-Reader-Wikidot.user.css
+==/UserStyle== */
+
+/* Non-Dark Reader Code. Made on the DS2 wiki katana table. */
+#side-bar .tr {
+    background-image:none
+}
+
+/* The classic: https://gist.github.com/ze-/2626009 */
+iframe.html-block-iframe{ filter:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgPGRlZnM+ICAKICAgIDxmaWx0ZXIgaWQ9InZhbHVlX2ludmVydCIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4KICAgICAgPGZlQ29sb3JNYXRyaXggcmVzdWx0PSJTb3VyY2VHcmFwaGljIiB0eXBlPSJzYXR1cmF0ZSIgdmFsdWVzPSIxIiAvPgogICAgICA8ZmVDb2xvck1hdHJpeCBpbj0iU291cmNlR3JhcGhpYyIgdmFsdWVzPSItMSAwIDAgMCAxIDAgLTEgMCAwIDEgMCAwIC0xIDAgMSAwIDAgMCAxIDAiIC8+CiAgICAgIDxmZUNvbG9yTWF0cml4IHR5cGU9Imh1ZVJvdGF0ZSIgdmFsdWVzPSIxODAiIC8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+Cjwvc3ZnPgo=#value_invert) !important;
+}
+/*Modified Join-Box and Top-Bar to remove image backgrounds. */
+
+/* User-Agent Style */
+html {
+    background-color: #000000 !important;
+}
+html, body, input, textarea, select, button {
+    background-color: #000000;
+}
+html, body, input, textarea, select, button {
+    border-color: #645946;
+    color: #ffffff;
+}
+a {
+    color: #098fff;
+}
+table {
+    border-color: #384246;
+}
+::placeholder {
+    color: #beb4a6;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #394200 !important;
+    color: #ffffff !important;
+}
+::-webkit-scrollbar {
+    background-color: #000000;
+    color: #b4aa9a;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #232a2e;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #3c464c;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #272f34;
+}
+::-webkit-scrollbar-corner {
+    background-color: #000000;
+}
+::selection {
+    background-color: #002eb2 !important;
+    color: #ffffff !important;
+}
+::-moz-selection {
+    background-color: #002eb2 !important;
+    color: #ffffff !important;
+}
+
+/* Invert Style */
+.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, #bit-notification-bar-iframe, ::-webkit-calendar-picker-indicator {
+    filter: invert(100%) hue-rotate(180deg) brightness(95%) !important;
+}
+
+/* Variables Style */
+:root {
+   --darkreader-neutral-background: #000000;
+   --darkreader-neutral-text: #f4eee7;
+   --darkreader-selection-background: #002eb2;
+   --darkreader-selection-text: #ffffff;
+}
+
+/* Modified CSS */
+.join-box a {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    background-image: none;
+    border: solid white 2px;
+    border-radius: 5px ;
+    outline-color: initial;
+    text-decoration-color: initial;
+}
+.join-box a:hover {
+    color: rgb(190, 181, 167);
+}
+blockquote {
+    border-color: rgb(46, 55, 59);
+    background-color: rgb(0, 0, 0);
+}
+a {
+    color: rgb(82, 161, 255);
+}
+a:hover {
+    background-color: rgb(0, 0, 0);
+}
+h1 a {
+    text-decoration-color: initial;
+}
+a.newpage {
+    color: rgb(231, 93, 93);
+}
+#page-title {
+    border-bottom-color: rgb(87, 77, 60);
+}
+.page-tags span {
+    border-top-color: rgb(32, 40, 45);
+}
+#license-area {
+    color: rgb(190, 181, 167);
+}
+#search-top-box input.empty {
+    color: rgb(190, 181, 167);
+}
+#login-status > a > strong {
+    text-decoration-color: initial;
+}
+#account-options {
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(53, 62, 67);
+}
+#account-options ul {
+    list-style-image: initial;
+}
+#account-options li a:hover {
+    color: rgb(255, 255, 255);
+}
+#account-topbutton {
+    border-color: rgb(53, 62, 67);
+    text-decoration-color: initial;
+    background-color: rgb(0, 0, 0);
+}
+#top-bar ul {
+    list-style-image: initial;
+}
+#top-bar li {
+    list-style-image: initial;
+}
+#top-bar li ul {
+    border-color: rgb(12, 17, 20);
+}
+#top-bar li a {
+    text-decoration-color: initial;
+}
+#top-bar a:hover {
+    background-color: rgb(0, 0, 0);
+    text-decoration-color: initial;
+}
+#top-bar li ul li a {
+    background-color: rgb(0, 0, 0);
+    border-color: initial;
+}
+.edit-section-button {
+    background-color: rgb(0, 0, 0);
+}
+#edit-section-content {
+    border-color: rgb(25, 25, 94);
+}
+.page-watch-options a {
+    text-decoration-color: initial;
+}
+.page-watch-options a:hover {
+    text-decoration-color: initial;
+}
+.change-textarea-size a {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(32, 40, 45);
+    text-decoration-color: initial;
+}
+.preview-message {
+    border-color: rgb(53, 62, 67);
+    background-color: rgb(37, 0, 0);
+}
+#page-version-info {
+    border-color: rgb(53, 62, 67);
+    background-color: rgb(0, 0, 0);
+}
+#lock-info {
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(25, 33, 36);
+}
+a.action-area-close:hover {
+    background-color: rgb(0, 3, 6);
+}
+table.wiki-content-table td {
+    border-color: rgb(53, 62, 67);
+}
+table.wiki-content-table th {
+    border-color: rgb(53, 62, 67);
+    background-color: rgb(0, 0, 0);
+}
+#toc {
+    border-color: rgb(56, 66, 70);
+    background-color: rgb(0, 0, 0);
+}
+.code {
+    border-color: rgb(19, 25, 29);
+    background-color: rgb(0, 0, 0);
+}
+.math-inline span.merror {
+    color: rgb(255, 0, 0) !important;
+}
+div.wiki-note {
+    border-color: rgb(46, 55, 59);
+}
+.gallery-item {
+    border-color: rgb(32, 40, 45);
+}
+table.page-history td.optionstd a {
+    border-color: rgb(32, 40, 45);
+    text-decoration-color: initial;
+}
+.diff-table td.from,
+.diff-table td.to {
+    border-color: rgb(32, 40, 45);
+}
+.inline-diff ins {
+    background-color: rgb(0, 0, 0);
+}
+.inline-diff del {
+    background-color: rgb(53, 0, 0);
+}
+table.page-compare td,
+table.page-compare th {
+    border-color: rgb(25, 33, 36);
+}
+.page-source {
+    border-color: rgb(39, 47, 52);
+}
+.wiki-parse-error {
+    color: rgb(255, 0, 0);
+}
+.spantip {
+    text-decoration-color: initial;
+}
+.pager a {
+    border-color: rgb(25, 33, 36);
+    text-decoration-color: initial;
+}
+.pager .current {
+    background-color: rgb(66, 77, 83);
+    color: rgb(255, 255, 255);
+    border-color: rgb(112, 99, 80);
+}
+table.page-files .highlight {
+    background-color: rgb(0, 0, 0);
+}
+a.avatar-hover,
+a.avatar-hover:hover {
+    background-color: initial;
+    text-decoration-color: initial;
+    color: rgb(255, 255, 255);
+}
+a.avatar-hover div div {
+    background-color: rgb(0, 0, 0);
+}
+a.avatar-hover div span {
+    background-color: rgb(0, 0, 0);
+}
+/*.wait-block {}*/
+.error-inline {
+    color: rgb(255, 0, 0);
+    border-color: rgb(191, 0, 0);
+}
+.error-block {
+    color: rgb(255, 40, 40);
+    border-color: rgb(117, 0, 0);
+}
+.warning-block {
+    color: rgb(206, 197, 186);
+    border-color: rgb(191, 191, 0);
+}
+.help-block {
+    border-color: rgb(0, 117, 0);
+    color: rgb(244, 240, 231);
+}
+/*.wait-icon {}
+.wait-progress {}*/
+table.form.grid td,
+table.form.grid th {
+    border-color: rgb(19, 25, 29);
+}
+table.form td div.sub,
+form div.sub {
+    color: rgb(160, 147, 130);
+}
+table.form tr.invalid-value-row td {
+    background-color: rgb(97, 100, 0);
+}
+table.form div.field-error-message {
+    color: rgb(255, 6, 6);
+}
+table.form tr.invalid-value-row div.field-error-message {
+    color: rgb(255, 6, 6);
+}
+hr {
+    border-color: initial;
+    color: rgb(237, 231, 223);
+    background-color: rgb(39, 47, 52);
+}
+div.buttons input,
+input.button,
+button,
+file,
+a.button {
+    text-decoration-color: initial;
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(39, 47, 52);
+    color: rgb(255, 255, 255);
+}
+div.buttons input:hover,
+input.button:hover,
+button:hover,
+a.button:hover {
+    background-color: rgb(0, 3, 6);
+    color: rgb(255, 255, 255);
+}
+input.button.disabled,
+div.buttons input.disabled {
+    background-color: rgb(0, 0, 0);
+    color: rgb(206, 197, 186);
+}
+input.button.disabled:hover,
+div.buttons input.disabled:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(206, 197, 186);
+}
+input.checkbox {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+input.text {
+    border-color: rgb(80, 70, 55);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+input.text.invalid {
+    border-color: rgb(191, 0, 0);
+}
+textarea {
+    border-color: rgb(80, 70, 55);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+div.note {
+    border-color: rgb(12, 17, 20);
+    background-color: rgb(0, 0, 0);
+}
+div.note-block {
+    border-color: rgb(94, 0, 0);
+}
+div.site-list-item:hover {
+    background-color: rgb(0, 0, 0);
+}
+.search-highlight {
+    background-color: rgb(227, 227, 0);
+}
+.self-ads {
+    border-color: rgb(53, 62, 67);
+}
+div.wd-adunit-mobile_anchor {
+    background-color: rgb(0, 0, 0);
+}
+#house-ad-1 {
+    background-image: initial;
+    background-color: rgb(0, 0, 0);
+    color: rgb(237, 231, 223);
+    border-color: rgb(25, 33, 36);
+}
+#house-ad-1 .close {
+    color: rgb(255, 255, 255);
+    background-image: initial;
+    background-color: rgb(12, 17, 20);
+    text-decoration-color: initial;
+}
+#house-ad-1 .close:hover {
+    text-decoration-color: initial;
+    background-image: initial;
+    background-color: rgb(27, 35, 39);
+}
+#house-ad-1 .button-wrap a {
+    color: rgb(255, 255, 255);
+    background-color: rgb(154, 72, 0);
+    border-color: rgb(156, 73, 0);
+    text-decoration-color: initial;
+}
+#house-ad-1 .button-wrap a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(187, 93, 0);
+    border-color: rgb(180, 89, 0);
+    text-decoration-color: initial;
+}
+.hubzo-ad .link a {
+    color: rgb(79, 211, 79);
+}
+.yui-nav,
+.yui-nav li {
+    list-style-image: initial;
+}
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border-color: rgb(0, 36, 161);
+}
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background-color: rgb(2, 7, 10);
+    border-color: rgb(42, 50, 55);
+    color: rgb(255, 255, 255);
+    text-decoration-color: initial;
+}
+.yui-navset .yui-nav a em,
+.yui-navset .yui-navset-top .yui-nav a em {
+    border-color: rgb(42, 50, 55);
+}
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+    background-color: rgb(0, 17, 119);
+    color: rgb(255, 255, 255);
+}
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background-color: rgb(0, 2, 3);
+    outline-color: initial;
+}
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a em {
+    border-color: rgb(27, 66, 156);
+}
+.yui-navset .yui-content {
+    background-image: initial;
+    background-color: rgb(0, 0, 0);
+}
+.yui-navset .yui-content,
+.yui-navset .yui-navset-top .yui-content {
+    border-color: rgb(27, 66, 156) rgb(56, 66, 70) rgb(56, 66, 70);
+}
+.yui-navset-left .yui-nav a,
+.yui-navset-left .yui-nav .selected a,
+.yui-navset-left .yui-nav a:hover,
+.yui-navset-right .yui-nav a,
+.yui-navset-right .yui-nav .selected a,
+.yui-navset-right .yui-nav a:hover,
+.yui-navset-bottom .yui-nav a,
+.yui-navset-bottom .yui-nav .selected a,
+.yui-navset-bottom .yui-nav a:hover {
+    background-image: none;
+}
+.yui-navset-left .yui-content {
+    border-color: rgb(56, 66, 70) rgb(56, 66, 70) rgb(56, 66, 70) rgb(27, 66, 156);
+}
+.yui-navset-bottom .yui-content,
+.yui-navset .yui-navset-bottom .yui-content {
+    border-color: rgb(56, 66, 70) rgb(56, 66, 70) rgb(27, 66, 156);
+}
+.hl-default {
+    color: rgb(255, 255, 255);
+}
+.hl-code {
+    color: rgb(255, 255, 255);
+}
+.hl-brackets {
+    color: rgb(255, 255, 255);
+}
+.hl-comment {
+    color: rgb(97, 210, 97);
+}
+.hl-quotes {
+    color: rgb(96, 170, 255);
+}
+.hl-string {
+    color: rgb(96, 170, 255);
+}
+.hl-identifier {
+    color: rgb(255, 255, 255);
+}
+.hl-builtin {
+    color: rgb(99, 255, 255);
+}
+.hl-reserved {
+    color: rgb(70, 137, 254);
+}
+.hl-inlinedoc {
+    color: rgb(9, 114, 255);
+}
+.hl-var {
+    color: rgb(97, 210, 97);
+}
+.hl-url {
+    color: rgb(9, 114, 255);
+}
+.hl-special {
+    color: rgb(117, 184, 255);
+}
+.hl-number {
+    color: rgb(255, 99, 99);
+}
+.hl-inlinetags {
+    color: rgb(210, 97, 210);
+}
+.hl-gutter {
+    background-color: rgb(53, 62, 67);
+    color: rgb(255, 255, 255);
+}
+.yui-ac-content {
+    border-color: rgb(106, 93, 76);
+    background-image: initial;
+    background-color: rgb(0, 0, 0);
+}
+.autocomplete-list ul {
+    list-style-image: initial;
+}
+.autocomplete-list li.yui-ac-highlight {
+    background-color: rgb(0, 3, 6);
+}
+.forum-group div.head {
+    background-color: rgb(46, 55, 59);
+    color: rgb(255, 255, 255);
+    border-color: rgb(112, 99, 80);
+}
+.forum-group table td {
+    border-color: rgb(19, 25, 29);
+}
+.forum-group table td.name .description {
+    color: rgb(160, 147, 130);
+}
+.forum-group table tr.head td {
+    background-color: rgb(0, 0, 0);
+}
+.forum-category-box .description-block {
+    border-color: rgb(25, 33, 36);
+    background-color: rgb(0, 0, 0);
+}
+.forum-category-box .description-block .statistics {
+    color: rgb(176, 164, 149);
+}
+.forum-category-box table {
+    border-color: rgb(32, 40, 45);
+}
+.forum-category-box table td {
+    border-color: rgb(19, 25, 29);
+}
+.forum-category-box table tr.head td {
+    background-color: rgb(0, 0, 0);
+}
+.forum-category-box table td.name .description {
+    color: rgb(160, 147, 130);
+}
+.forum-new-thread-box .description {
+    border-color: rgb(25, 33, 36);
+    background-color: rgb(0, 0, 0);
+}
+.forum-new-thread-box .description .statistics {
+    color: rgb(176, 164, 149);
+}
+.forum-thread-box .description-block {
+    border-color: rgb(25, 33, 36);
+    background-color: rgb(0, 0, 0);
+}
+.forum-thread-box .description-block .head {
+    color: rgb(160, 147, 130);
+}
+.forum-thread-box .description-block .statistics {
+    color: rgb(176, 164, 149);
+}
+.forum-thread-box .action-area {
+    border-color: rgb(12, 17, 20);
+}
+.thread-container .post .options a {
+    color: rgb(167, 156, 139);
+}
+.thread-container .post .head {
+    background-color: rgb(0, 0, 0);
+}
+.thread-container .post .long .changes {
+    color: rgb(160, 147, 130);
+}
+.thread-container .post .long .changes a {
+    color: rgb(167, 156, 139);
+}
+.thread-container .post .long .revisions table tr.active td {
+    background-color: rgb(0, 0, 0);
+}
+.thread-container .post .short {
+    background-color: rgb(0, 0, 0);
+}
+.thread-container .post .short .options {
+    color: rgb(167, 156, 139);
+}
+.post-container.fordelete {
+    border-color: rgb(150, 0, 0);
+}
+div.new-post a {
+    border-color: rgb(46, 55, 59);
+    background-color: rgb(0, 0, 0);
+}
+.forum-mini-stat .item .info {
+    color: rgb(160, 147, 130);
+}
+.wd-editor-toolbar-panel a {
+    border-color: transparent;
+    background-color: rgb(0, 0, 0);
+}
+.wd-editor-toolbar-panel a:hover {
+    border-color: rgb(112, 99, 80);
+}
+.wd-editor-toolbar-panel ul {
+    list-style-image: initial;
+}
+.wd-editor-toolbar-panel ul li:hover ul,
+.wd-editor-toolbar-panel ul li.sfhover ul {
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(96, 84, 67);
+}
+.wd-editor-toolbar-panel li.hseparator {
+    background-color: rgb(0, 0, 0);
+}
+/*.wd-editor-toolbar-panel a {}
+.wd-editor-toolbar-panel a:hover {}*/
+.odialog-shader {
+    background-color: rgb(0, 0, 0);
+}
+.owindow {
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(32, 40, 45);
+}
+.owindow .title {
+    background-color: rgb(0, 0, 0);
+}
+.owindow .button-bar a {
+    text-decoration-color: initial;
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(39, 47, 52);
+}
+.owindow .button-bar a:hover {
+    background-color: rgb(0, 3, 6);
+}
+/*.owindow.owait .content {} */
+.box444 {
+    background-color: rgb(0, 0, 0);
+}
+.box444 .button-bar {
+    background-color: rgb(0, 3, 6);
+}
+.hovertip {
+    border-color: rgb(53, 62, 67);
+    background-color: rgb(0, 0, 0);
+}
+#jquery-lightbox a img {
+    border-color: initial;
+}
+#lightbox-container-image-box {
+    background-color: rgb(0, 0, 0);
+}
+#lightbox-nav a {
+    outline-color: initial;
+}
+#lightbox-container-image-data-box {
+    background-color: rgb(0, 0, 0);
+}
+#lightbox-container-image-data {
+    color: rgb(176, 164, 149);
+}
+#navi-bar {
+    background-color: rgb(12, 17, 20);
+    border-bottom-color: rgb(104, 92, 74);
+    color: rgb(255, 255, 255);
+}
+#navi-bar a {
+    color: rgb(103, 167, 255);
+    background-image: initial;
+    background-color: transparent;
+    text-decoration-color: initial;
+}
+#navi-bar a:hover {
+    background-color: transparent;
+    text-decoration-color: initial;
+}
+/*#navi-bar a.logo {}*/
+#navi-bar .new-site input.empty {
+    color: rgb(176, 164, 149);
+}
+#navi-bar .action-buttons {
+    color: rgb(255, 255, 255);
+}
+#navi-bar .action-buttons a {
+    color: rgb(255, 255, 255);
+}
+#navi-bar .join {
+    color: rgb(255, 255, 255);
+}
+#navi-bar .random-site {
+    color: rgb(255, 255, 255);
+}
+#navi-bar .random-site:hover {
+    border-color: rgb(136, 121, 100);
+}
+#footer-bar {
+    border-top-color: rgb(39, 47, 52);
+}
+#footer-bar .unit .image {
+    text-decoration-color: initial;
+}
+#footer-bar a {
+    text-decoration-color: initial;
+    background-image: initial;
+    background-color: transparent;
+}
+#footer-bar a:hover {
+    text-decoration-color: initial;
+    background-image: initial;
+    background-color: transparent;
+}
+.form-table .form-error {
+    border-color: rgb(191, 0, 0);
+}
+.form-table .form-hinted {
+    color: rgb(176, 164, 149);
+}
+.form-table .form-message {
+    color: rgb(99, 255, 99);
+}
+iframe.html-block-iframe {
+    border-color: initial;
+    background-image: initial;
+    background-color: transparent;
+}
+.awesome,
+.awesome:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.awesome {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;
+    border-color: initial !important;
+    text-decoration-color: initial !important;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px -1px 1px,
+    rgba(0, 0, 0, 0.25) -2px 0px 1px !important;
+}
+@media (-webkit-min-device-pixel-ratio: 10000),
+not all and (-webkit-min-device-pixel-ratio: 0) {
+    input.awesome {
+        border-color: rgba(136, 121, 100, 0) !important;
+    }
+}
+.awesome::selection {
+    background-image: initial;
+    background-color: transparent;
+}
+.awesome {
+    outline-color: initial;
+}
+.awesome:focus,
+.awesome:hover {
+}
+.awesome:active {
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 1px 2px inset !important;
+}
+.awesome.blue,
+.awesome.blue:hover {
+    background-color: rgb(0, 17, 218);
+}
+.awesome.darkblue,
+.awesome.darkblue:hover {
+    background-color: rgb(0, 27, 130);
+}
+.awesome.red,
+.awesome.red:hover {
+    background-color: rgb(196, 0, 0);
+}
+.awesome.green,
+.awesome.green:hover {
+    background-color: rgb(2, 169, 0);
+}
+.awesome.grey,
+.awesome.grey:hover {
+    background-color: rgb(65, 74, 80);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .awesome:active {
+        box-shadow: none;
+    }
+}
+table.guest-commenting {
+    border-color: initial;
+}
+table.guest-commenting td label.hint {
+    color: rgb(176, 164, 149);
+}
+.wikidot-hybrid-module-loading {
+    background-color: initial;
+}
+#tiptip_content {
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 0px 0px 2px;
+    border-color: rgba(5, 10, 13, 0.25);
+    background-color: rgba(0, 0, 0, 0.92);
+    background-image: -webkit-gradient(linear,
+    0% 0%,
+    0% 100%,
+    from(rgba(0, 0, 0, 0)),
+    to(rgb(0, 0, 0)));
+    box-shadow: rgb(27, 35, 39) 0px 0px 3px;
+}
+#tiptip_arrow,
+#tiptip_arrow_inner {
+    border-color: transparent;
+}
+#tiptip_holder.tip_top #tiptip_arrow {
+    border-top-color: rgba(5, 10, 13, 0.35);
+}
+#tiptip_holder.tip_bottom #tiptip_arrow {
+    border-bottom-color: rgba(5, 10, 13, 0.35);
+}
+#tiptip_holder.tip_right #tiptip_arrow {
+    border-right-color: rgba(5, 10, 13, 0.35);
+}
+#tiptip_holder.tip_left #tiptip_arrow {
+    border-left-color: rgba(5, 10, 13, 0.35);
+}
+#tiptip_holder.tip_top #tiptip_arrow_inner {
+    border-top-color: rgba(124, 110, 90, 0.92);
+}
+#tiptip_holder.tip_bottom #tiptip_arrow_inner {
+    border-bottom-color: rgba(124, 110, 90, 0.92);
+}
+#tiptip_holder.tip_right #tiptip_arrow_inner {
+    border-right-color: rgba(124, 110, 90, 0.92);
+}
+#tiptip_holder.tip_left #tiptip_arrow_inner {
+    border-left-color: rgba(124, 110, 90, 0.92);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    #tiptip_content {
+        background-color: rgba(0, 0, 0, 0.88);
+    }
+    #tiptip_holder.tip_bottom #tiptip_arrow_inner {
+        border-bottom-color: rgba(114, 102, 83, 0.88);
+    }
+    #tiptip_holder.tip_top #tiptip_arrow_inner {
+        border-top-color: rgba(126, 113, 93, 0.92);
+    }
+}
+.flag-user-ok {
+    color: rgb(60, 213, 60);
+    border-color: rgb(136, 121, 100);
+}
+.flag-user-abusive {
+    color: rgb(221, 214, 204);
+    border-color: rgb(19, 25, 29);
+    text-decoration-color: initial;
+}
+.unflag-user-ok {
+    color: rgb(221, 214, 204);
+    border-color: rgb(19, 25, 29);
+    text-decoration-color: initial;
+}
+.unflag-user-abusive {
+    color: rgb(213, 60, 60);
+    border-color: rgb(136, 121, 100);
+}
+#upload-file-list table .progress .progress-bar {
+    background-color: rgb(0, 3, 6);
+}
+#header {
+    background-color: rgb(0, 0, 0);
+}
+#header h2 {
+    background-color: rgb(0, 0, 0);
+}
+#header h1 a,
+#header h1 a:hover {
+    background-color: rgb(0, 0, 0);
+}
+#header-extra-div-2 {
+    background-color: rgb(0, 0, 0);
+}
+#header-extra-div-3 {
+    border-color: initial;
+    background-color: rgb(0, 0, 0);
+}
+#header-extra-div-1,
+#header-extra-div-3 {
+    border-color: rgb(136, 121, 100);
+}
+#header h1 span {
+    color: rgb(255, 255, 253);
+}
+#header-extra-div-3 {
+    background-color: rgb(0, 0, 0);
+}
+.forum-thread-box .description-block {
+    background-color: rgb(0, 3, 6);
+    border-color: rgb(136, 121, 100);
+    color: rgb(255, 255, 255);
+}
+.thread-container .post .head {
+    background-color: rgb(0, 3, 6);
+    border-color: rgb(136, 121, 100);
+    color: rgb(255, 255, 255);
+}
+.forum-thread-box .description-block .head {
+    color: rgb(255, 255, 255);
+}
+.thread-container .post .options a {
+    color: rgb(255, 255, 255);
+}
+.forum-thread-box .description-block .statistics {
+    color: rgb(255, 255, 255);
+}
+div.new-post a {
+    background-color: rgb(0, 3, 6);
+    border-color: rgb(136, 121, 100);
+    color: rgb(255, 255, 255);
+}
+.forum-category-box .description-block {
+    background-color: rgb(0, 3, 6);
+    border-color: rgb(136, 121, 100);
+}
+.forum-category-box table {
+    border-color: rgb(136, 121, 100);
+}
+.forum-category-box table td {
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(19, 25, 29);
+}
+.forum-category-box table tr.head td {
+    background-color: rgb(65, 74, 80);
+    border-color: rgb(136, 121, 100);
+}
+.forum-group div.head {
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(5, 10, 13);
+    color: rgb(251, 247, 241);
+}
+.forum-group table tr.head td {
+    background-color: rgb(53, 62, 67);
+    border-color: rgb(136, 121, 100);
+    color: rgb(255, 255, 255);
+}
+.forum-group table td {
+    background-color: rgb(12, 17, 20);
+    border-color: rgb(136, 121, 100);
+    color: rgb(255, 255, 255);
+}
+.forum-category-box table td.name .description {
+    color: rgb(255, 255, 255);
+}
+.forum-group table td.name .description {
+    color: rgb(255, 255, 255);
+}
+#footer {
+    color: rgb(255, 255, 255);
+    background-color: rgb(12, 17, 20);
+}
+#footer a {
+    color: rgb(255, 255, 255);
+}
+#footer {
+    border-color: initial;
+}
+#footer {
+    border-color: rgb(136, 121, 100);
+}
+div.buttons input,
+input.button,
+button,
+file,
+a.button {
+    background-color: rgb(12, 17, 20);
+    color: rgb(255, 255, 255);
+}
+div.buttons input:hover,
+input.button:hover,
+button:hover,
+a.button:hover {
+    background-color: rgb(12, 17, 20);
+    color: rgb(255, 255, 255);
+}
+#lock-info {
+    background-color: rgb(12, 17, 20);
+}
+#top-bar {
+    background-color: transparent;
+    border-color: rgb(87, 77, 60);
+}
+#top-bar a {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+#top-bar a:hover {
+    background-image: none;
+    text-decoration-color: initial;
+    color: rgb(255, 255, 255);
+}
+#top-bar li {
+    list-style-image: initial;
+}
+#top-bar li a {
+    text-decoration-color: initial;
+}
+#top-bar li ul {
+    border-color: rgb(87, 77, 60);
+    background-color: transparent;
+}
+#top-bar li ul li a {
+    background-color: transparent;
+    border-color: initial;
+}
+#top-bar ul {
+    list-style-image: initial;
+}
+#top-bar ul li {
+    border-color: rgb(136, 121, 100);
+    background-color: rgb(0, 0, 0);
+    background-image: none;
+}
+#top-bar ul li ul {
+    background-color: transparent;
+    border-color: rgb(136, 121, 100);
+}
+#top-bar ul li ul li {
+    border-color: rgb(136, 121, 100);
+    background-color: rgb(0, 0, 0);
+    background-image: none;
+}
+#top-bar ul li ul li.sfhover a {
+    color: rgb(255, 255, 255);
+    background-image: none;
+    background-color: rgb(0, 0, 0);
+}
+#top-bar a.wiki-standalone-button {
+    background-color: transparent;
+}
+#top-bar span a {
+    color: rgb(9, 114, 255);
+}
+#top-bar span a:hover {
+    background-image: none;
+    color: rgb(9, 114, 255);
+    text-decoration-color: initial;
+}
+#top-bar .announcements {
+    border-color: rgb(136, 121, 100);
+    background-color: rgb(227, 0, 0);
+}
+#top-bar .announcements a {
+    color: rgb(255, 255, 255);
+}
+#top-bar .announcements a:hover {
+    background-image: initial;
+    background-color: transparent;
+    color: rgb(9, 114, 255);
+    text-decoration-color: initial;
+}
+#side-bar {
+    border-color: initial;
+    background-color: rgb(0, 0, 0);
+}
+#side-bar {
+    border-color: rgb(87, 77, 60);
+}
+#side-bar .collapsible-block .collapsible-block-folded .collapsible-block-link {
+    background-color: transparent;
+}
+#side-bar .collapsible-block .collapsible-block-unfolded .collapsible-block-link {
+    background-color: transparent;
+}
+blockquote {
+    background-color: rgb(0, 0, 0);
+    border-color: initial;
+}
+blockquote blockquote {
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(32, 40, 45);
+}
+#container {
+    background-color: rgb(0, 0, 0);
+}
+body {
+    color: rgb(255, 255, 255);
+}
+a {
+    color: rgb(52, 150, 255);
+    text-decoration-color: initial;
+}
+a:hover {
+    background-color: transparent;
+    text-decoration-color: initial;
+}
+a.newpage {
+    color: rgb(255, 74, 74);
+}
+#login-status a {
+    color: rgb(255, 255, 255);
+}
+#search-top-box::after {
+    color: rgb(255, 255, 255);
+}
+table.wiki-content-table th {
+    background-color: rgb(9, 15, 17);
+}
+#toc {
+    border-color: rgb(56, 66, 70);
+    background-color: transparent;
+}
+#toc #toc-action-bar::before {
+    color: rgb(255, 255, 255);
+}
+#toc #toc-action-bar a::before {
+    color: rgb(255, 255, 255);
+}
+#toc #toc-action-bar a {
+    color: rgb(9, 114, 255);
+}
+#toc #toc-action-bar a::after {
+    color: rgb(255, 255, 255);
+}
+#toc-list a {
+    color: rgb(9, 114, 255);
+}
+.table {
+    border-right-color: rgb(25, 33, 36);
+    border-bottom-color: rgb(25, 33, 36);
+    border-left-color: rgb(25, 33, 36);
+    border-top-color: initial;
+}
+.table td {
+    border-bottom-color: rgb(25, 33, 36);
+}
+.table th {
+    border-bottom-color: rgb(25, 33, 36);
+    background-color: rgb(12, 17, 20);
+}
+table.wiki-content-table {
+    border-right-color: rgb(25, 33, 36);
+    border-bottom-color: rgb(25, 33, 36);
+    border-left-color: rgb(25, 33, 36);
+    border-top-color: initial;
+}
+table.wiki-content-table td {
+    border-color: transparent transparent rgb(25, 33, 36);
+}
+table.wiki-content-table th {
+    border-top-color: transparent;
+    border-bottom-color: rgb(25, 33, 36);
+    background-color: rgb(12, 17, 20);
+}
+.hover:hover {
+    text-decoration-color: initial;
+    border-bottom-color: initial;
+}
+.hover a {
+    color: rgb(52, 150, 255);
+}
+.hover:hover span {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-color: rgb(136, 121, 100);
+}
+.hover:hover span span {
+    border-color: initial;
+}
+
+/* Override Style */
+.vimvixen-hint {
+    background-color: #703700 !important;
+    border-color: #f4bb00 !important;
+    color: #ffffdd !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+a[href="https://coinmarketcap.com/"] > svg[width="94"][height="16"] > path {
+    fill: var(--darkreader-neutral-text) !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1 {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: #001327 !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+
+}
